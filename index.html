@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ recipes</title>
+    <style>
+        .container{
+            height: 300vh;
+            width: 100vw;
+            overflow-x: none;
+            /* overflow-y: none; */
+            background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+            flex-wrap: nowrap;
+        }
+        #list1{
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navcontainer{
+            width: 100vw;
+            /* background: linear-gradient(rgb(141, 41, 41),rgb(141, 99, 22)); */
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+        #name{
+            font-size: 3rem;
+        }
+        #navbar{
+            font-size: 2rem;
+        }
+        nav{
+            width: 100vw;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        .footerbox{
+            width: 100vw;
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            text-align: center;
+        }
+        .footerbox p{
+            size: 2rem;
+            color: azure;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+            padding: 30px;
+            border: solid black 2px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 10px 6px 5px grey;
+            
+        }
+        .reciepie1{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 25px;
+
+        }
+        .rightbox1{
+            position: relative;
+            height: 320px;
+            width: 240px;
+            transition: all 0.25s;
+        }
+        .rightbox1:hover{
+            transform: scale(1.2);
+        }
+        .imageoverlay1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.25s;
+        }
+        .imageoverlay1:hover{
+            opacity: 1;
+
+        }
+        .rightbox1 .image1{
+            border-radius: 8px;
+            box-shadow: 8px 8px 5px grey;
+            transition: all 1s linear;
+        }
+        .title1{
+            font-size: 2rem;
+        }
+        
+        .reciepie2{
+            display:flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin:25px
+        }
+        .rightbox2{
+            position: relative;
+            height: 320px;
+            width: 240px;
+            transition: all 0.25s;
+        }
+        .rightbox2:hover{
+            transform: scale(1.2);
+        }
+        .imageoverlay2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.25s;
+        }
+        .imageoverlay2:hover{
+            opacity: 1;
+
+        }
+        .rightbox2 .image2{
+            border-radius: 8px;
+            box-shadow: 8px 8px 5px grey;
+            transition: all 1s linear;
+        }
+        .title2{
+            font-size: 2rem;
+        }
+        @media screen and (max-width:600px){
+
+            .container{
+                height: 700vh;
+                width: 230vw;
+            }
+            .navcontainer{
+                width: 230vw;
+            }
+            
+            .footerbox{
+                width: 230vw;
+            }
+            .content{
+                width: 200vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer">
+            <nav>
+                <ul id="list1">
+                    <li><p id="name" style="color: whitesmoke;">XYZ recipes</p></li>
+                    <li id="navbar">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <main><div class="content">
+         <div class="reciepie1">
+            <div class="leftbox1">
+            <h1>Gulab Jamun</h1>
+            
+                <h2>Ingridients</h2>
+                <ul>
+                    <li>1 cup milk powder</li>
+                    <li>2 tablespoon floor</li>
+                    <li>1/8 baking powder</li>
+                    <li>1 tablespoon ghee</li>
+                    <li>5-6 tablespoon of milk</li>
+                    <li>Oil</li>
+                    <li>1 cup sugar</li>
+                    <li>1 cup of water</li>
+                    <li>2 cardamoms</li>
+                    <li>1 tablespoon of rosewater</li>
+                </ul>
+            
+            
+                <h3>Step 1: Prepare the dough</h3>
+                <p>In a mixing bowl, add the milk powder, all-purpose flour, baking powder and ghee.
+
+                    Slowly add the milk, 1 tablespoon at a time, and gently form the dough by mixing. 
+                    It should be a stiff dough. If the dough is sticky, grease your palms with oil and 
+                    gently mix. Do not knead the dough—it will make the jamuns hard.</p>
+                <h3>Step 2: Let the dough rest</h3>
+                <p>Cover the dough with a damp cloth. Let rest for 5 minutes.</p>
+                <h3>Step 3: Prepare the sugar syrup</h3>
+                <p>In a saucepan, add the sugar, water and two green cardamom pods, crushed.
+
+                    Bring the mixture to a boil and let the sugar dissolve. When the sugar is completely dissolved, 
+                    simmer over medium-low heat for 5 to 6 minutes. We need a sticky-consistency sugar syrup here. 
+                    You can test it by removing a small amount of sugar syrup and letting it cool a bit. Then touch the 
+                    sugar syrup with your index finger and press it with your thumb. You should feel the stickiness.
+                    
+                    When it’s ready, remove the syrup from the heat and add the rose essence or rose water. Set aside.</p>
+                <h3>Step 4: Roll the jamuns</h3>
+                <p>In a saucepan, add the sugar, water and two green cardamom pods, crushed.
+
+                    Bring the mixture to a boil and let the sugar dissolve. When the sugar is completely 
+                    dissolved, simmer over medium-low heat for 5 to 6 minutes. We need a sticky-consistency 
+                    sugar syrup here. You can test it by removing a small amount of sugar syrup and letting it 
+                    cool a bit. Then touch the sugar syrup with your index finger and press it with your thumb. 
+                    You should feel the stickiness.
+                    
+                    When it’s ready, remove the syrup from the heat and add the rose essence or rose water. Set aside.</p>
+                <h3>Step 5: Fry the jamuns</h3>
+                <p>In a heavy saucepan or Dutch oven, heat a few inches of oil over low heat.
+
+                    The oil should not be very hot while frying the gulab jamuns. To test the oil, 
+                    drop in a small piece of the dough. It will sink initially, but after 30 seconds or
+                    so, it will float up, and the color should not change. That’s the right temperature.
+                    
+                    Slowly drop in 4 to 5 balls, depending on the pan size, and deep-fry the jamuns until
+                    they turn golden brown. Using a slotted spoon, keep rotating them in the oil for even cooking 
+                    and coloring. It takes me 4 to 5 minutes for each batch. Do not rush the frying process!
+                    
+                    When the jamuns are golden brown, use a slotted spoon to remove them from the oil and drain 
+                    on paper towels.</p> 
+                <h3>Step 6: Add jamuns to the sugar syrup</h3>  
+                <p>Let each jamun sit for 45 to 60 seconds, and then add the fried jamuns to the warm sugar syrup.
+
+                    Repeat with the next batch of jamuns, frying them and then adding them to the sugar syrup. 
+                    Let the jamuns soak in the sugar syrup for at least 2 hours. Overnight soaking is fine, too.</p>
+                <h3>Step 7: Garnish</h3>
+                <p>You can eat gulab jamun cold or warm. Put the jamuns in a serving bowl and drizzle the extra syrup on top. 
+                    Garnish with nuts or rose petals and serve.</p>
+            
+         </div> 
+         
+        <div class="rightbox1">
+            <img src="khoya gulab jamuns.jpg" height="320px" width="240px" class="image1">
+            <div class="imageoverlay1">
+                <div class="title1">GULAB JAMUN</div>
+            </div>
+        </div>
+         
+
+         </div>
+         <div class="reciepie2">
+            <div class="leftbox2">
+                <h1>Barfi</h1>
+                <h2>Ingridients</h2>
+                <ul>
+                    <li>50 g Butter</li>
+                    <li>300 g Milk Powder</li>
+                    <li>100 g Sugar</li>
+                    <li>½ tsp Cardamom Powder</li>
+                    <li>200 ml Milk</li>
+                    <li>Almonds</li>
+                    <li>Pistachios</li>
+                </ul>
+                <h3><b>Step 1: Add Almonds and Pistachios</b></h3>
+                <p>In a greased baking tin add the crushed almonds and pistachios – 
+                    leave some crushed nuts for the top as well</p>
+                <h3><b>Step 2: Melt Butter</b></h3>
+                <p>On low heat add the butter and allow to melt completely</p>
+                <h3><b>Step 3: Add Milk</b></h3>
+                <p>Add the milk and gradually allow it to heat until warm</p>
+                <h3><b>Step 4: Stir</b></h3>
+                <p>Once heated add the milk powder in small increments stirring continuously to break 
+                    the lumps and keep mixing until everything is incorporated</p>
+                <h3><b>Step 5: Add cardamom powder</b></h3>
+                <p>Add the sugar and cardamom powder then fold the mixture continuously on low heat 
+                    for 10 minutes</p>
+                <h3><b>Step 6: Leave to let it set</b></h3>
+                <p>Add mixture into the baking tin then top with the remaining almonds and pistachios 
+                    then leave to set for 1 hour</p>
+            </div>
+            <div class="rightbox2">
+                <img src="burfi.jpg" height="320px" width="240px" class="image2">
+                <div class="imageoverlay2">
+                    <div class="title2">BARFI</div>
+                </div>
+            </div>
+         </div>
+        </div></main>
+        <footer>
+            <div class="footerbox">
+                <p>copyrights &copy XYZ recipes all rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
